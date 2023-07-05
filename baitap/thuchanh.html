@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuc hanh</title>
+    <h2>Create Account</h2>
+</head>
+
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Registration information</legend>
+            <strong><label for="firstname">First name*:</label></strong>
+            <input type="text" name="firstname" required>
+            <strong><label for="lastname">Last name:</label></strong>
+            <input type="text" name="lastname" required><br>
+            <strong><label>Email*</label></strong>
+            <input type="text" name="email" required>
+            <strong>Phone*:</label></strong><label>
+                <input type="text" name="phone"><br>
+                <strong>Password:</label></strong><label>
+                <input type="password" name="password" required>
+                <strong><label>Confirm Password*:</label></strong>
+                <input type="password" name="password" required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Personal information</legend>
+            <strong><label>Gender:</label></strong>
+            <input type="radio" name="gender" value="male" checked>
+            <label>Male</label>
+            <input type="radio" name="gender" value="female">
+            <label>Female </label>
+            <strong><label>Hobbles:</label></strong>
+            <input type="checkbox" name="hobbles" value="music" checked>
+            <label>Music</label>
+            <input type="checkbox" name="hobbles" value="sport">
+            <label>Sport</label>
+            <input type="checkbox" name="hobbles" value="travel">
+            <label>Travel</label>
+            <input type="checkbox" name="hobbles" value="movies">
+            <label>Movies</label><br>
+            <strong><label>Source of Income:</label></strong>
+            <select>
+                <option value="employed">Employed</option>
+                <option value="doctor">Doctor</option>
+                <option value="police">Police</option>
+                <option value="CEO">CEO</option>
+            </select>
+            <strong><label>Income:</label></strong>
+            <input type="range" name="income" min="1" max="10"><br>
+            <strong><label>Age:</label></strong>
+            <input type="number" name="age">
+            <strong><label>Profile Picture:</label></strong>
+            <input type="file"><br>
+            <strong><label>Birthday:</label></strong>
+            <input type="date" name="birthday">
+            <strong><label>Address:</label></strong>
+            <input type="text" name="address"><br>
+            <strong><label>Bio:</label></strong><br>
+            <textarea name="bio" rows="2" cols="80"></textarea><br>
+
+        </fieldset>
+        <input type="submit" value="Create">
+        <input type="reset" value="reset"> 
+    </form>
+</body>
+
+</html>
